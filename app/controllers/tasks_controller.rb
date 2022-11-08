@@ -7,4 +7,30 @@ class TasksController < ApplicationController
     @task = Task.find(params[:id])
   end
 
+  def new
+    @task = Task.new
+  end
+
+  def create
+    @task = Task.create(permitted_params)
+    redirect_to task_path(@task)
+  end
+
+  def edit
+    @task = Task.find(params[:id])
+  end
+
+  def update
+    @task = Task.find(params[:id])
+    # takes all the values from my hash in params(task) and uses it
+    @task.update(permitted_params)
+    redirect_to task_path(@task)
+  end
+
+  private
+
+  def permitted_params
+    params.require(:task).permit(:title, :details)
+  end
+
 end
