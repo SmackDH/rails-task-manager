@@ -47,6 +47,7 @@ gem "bootsnap", require: false
 
 # Manually added
 gem 'pg'
+gem 'tailwindcss-rails'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
