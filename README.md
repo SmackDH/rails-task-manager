@@ -1,24 +1,39 @@
-# README
+# ✅ Task Manager
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Task manager made in Rails.
 
-Things you may want to cover:
 
-* Ruby version
+<br>
+   
 
-* System dependencies
+## Getting Started
+### Setup
 
-* Configuration
+Install gems
+```
+bundle install
+```
+Install JS packages
+```
+yarn install
+```
 
-* Database creation
+### DB Setup
+```
+rails db:create
+rails db:migrate
+rails db:seed
+```
 
-* Database initialization
+### Run a server
+```
+rails s
+```
 
-* How to run the test suite
+## Built With
+- [Rails 7](https://guides.rubyonrails.org/) - Backend / Front-end
+- [PostgreSQL](https://www.postgresql.org/) - Database
+- [Bootstrap](https://getbootstrap.com/) — Styling
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## License
+This project is licensed under the MIT License
